@@ -36,6 +36,9 @@ border-bottom: largura cor estilo da borda;
 <td>			= celulas
 onmousemove		= evento de passar o mouse
 onclick			= evento de Click
+<fieldset>		= Conjunto de campos
+
+
 
 position:	static
 		relative - movimentos pequenos
