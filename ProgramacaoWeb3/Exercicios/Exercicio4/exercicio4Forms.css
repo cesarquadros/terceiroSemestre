@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+	background: url("http://www.osmais.com/wallpapers/201212/natal-presente-wallpaper_c2673.jpg");
+}
+
+form {
+	width: 700px;
+	margin: 0px;
+}
+
+form fieldset{
+	border: 3px solid #000000;
+}
+
+form fieldset legend {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	font-size: 15pt;
+}
+
+form fieldset p{
+	font-family: monospace;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Presente de Natal</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="exercicio4Forms.css"/>
+</head>
+<body>
+	<form id="fContato">
+		<fieldset id="dadosCliente">
+			<legend>Dados Cliente</legend>
+			<p><label for="cUserNome"> Nome: 
+				<input required="required" placeholder="Apenas letras" type="text" name="tNome" id="cUserNome" pattern="[A-Za-z]*"/>
+			</p>
+			<p><label for="cUserSobrenome">Sobrenome: 
+				<input required="required" placeholder="Apenas letras" type="text" name="tUserSobrenome" id="cUserSobrenome" pattern="[A-Za-z]*"/>
+			</p>
+			<p><label for="cNasc"> Data Nasc.: 
+				<input type="date" name="tNasc" id="cNasc"/>
+			</p>
+			<fieldset>
+				<legend>Sexo</legend>
+				<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label>
+                <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+			</fieldset>
+		</fieldset>
+		<fieldset>
+			<legend>Endereço</legend>
+			<p><label for="cEndereco"> Logradouro: 
+				<input required="required" type="text" placeholder="RUA/AVENIDA" size="40" name="tEndereco" id="cEndereco"/> 
+				Número:
+				<input required="required" type="text" size="2" name="tNumero" id="cNumero"/> 
+			</p>			
+			<p><label for="cCep"> CEP:
+				<input required="required" type="text" placeholder="EX:00000-000" size="11" name="tCep" id="tCep"/>
+			</p>		
+		</fieldset>
+		<fieldset>
+			<legend>Presents</legend>
+			<p>Presente 1:
+				<select>
+					<option value="iphone">Iphone6</option>
+					<option value="notebok">Notebok</option>
+					<option value="game">XBOX360</option>
+				</select>
+			</p>
+			<p>Presente 2:
+				<select>
+					<option value="bola">Bola</option>
+					<option value="lego">Caixa de Lego</option>
+					<option value="pogobol">Pogobol</option>
+				</select>
+			</p>
+			<p>Presente 3:
+				<select>
+					<option value="camiseta">Camiseta</option>
+					<option value="blusa">Blusa</option>
+					<option value="tenis">Tênis</option>
+				</select>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Familia</legend>
+			<p>Quantidade de irmãos:
+				<input type="number" name="tQtdIrmaos" id="cQtdIrmaos" min="0"/>
+			</p>
+			<p>Nome do pai: <input required="required" type="type" placeholder="Digite o nome do seu pai" size="20" name="tNomePai" id="cNomePai"/>
+				Idade: <input type="number" name="tIdadePai" id="cIdadePai" min="0"/>
+				
+			</p>
+			<p>Nome da mãe: <input required="required" type="type" placeholder="Digite o nome da sua mãe" size="20" name="tNomeMae" id="cNomeMae"/>
+				Idade: <input type="number" name="tIdadeMae" id="cIdadeMae" min="0"/>
+
+			</p>			
+		</fieldset>
+		<fieldset>
+			<legend>Informações adicionais da criança</legend>
+			<fieldset>
+				<legend>Comportamento</legend>
+				<input type="radio" name="tComportamento" id="cBom" checked/><label for="cBom">Bom</label>
+                <input type="radio" name="tComportamento" id="cRuim"/><label for="cRuim">Ruim</label>
+			</fieldset>
+			</p>
+			<p>Quantidade de travessuras: <input type="number" name="tTravessuras" id="cTravessuras" min="0"/>
+			</p>
+			<p>Cor preferida: <input type="color" name="tColor" id="tColor" value="#0000ff"/></p>
+			</p>
+		</fieldset>
+		<button type="submit">Fazer Pedido</button>
+	</form>
+</body>
+</html>
