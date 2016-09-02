@@ -29,10 +29,10 @@
 			<legend>Endereço</legend>
 			<p><label for="cEndereco"> Logradouro: 
 				<input required="required" type="text" placeholder="RUA/AVENIDA" size="40" name="tEndereco" id="cEndereco"/> 
-				Número:
+				<label for="cNumero"> Número:
 				<input required="required" type="text" size="2" name="tNumero" id="cNumero"/> 
 			</p>			
-			<p><label for="cCep"> CEP:
+			<p><label for="tCep"> CEP:
 				<input required="required" type="text" placeholder="EX:00000-000" size="11" name="tCep" id="tCep"/>
 			</p>		
 		</fieldset>
@@ -62,15 +62,15 @@
 		</fieldset>
 		<fieldset>
 			<legend>Familia</legend>
-			<p>Quantidade de irmãos:
+			<p><label for="cQtdIrmaos">Quantidade de irmãos:
 				<input type="number" name="tQtdIrmaos" id="cQtdIrmaos" min="0"/>
 			</p>
-			<p>Nome do pai: <input required="required" type="type" placeholder="Digite o nome do seu pai" size="20" name="tNomePai" id="cNomePai"/>
-				Idade: <input type="number" name="tIdadePai" id="cIdadePai" min="0"/>
+			<p><label for="cQtdIrmaos">Nome do pai: <input required="required" type="type" placeholder="Digite o nome do seu pai" size="20" name="tNomePai" id="cNomePai"/>
+				<label for="cIdadePai"> Idade: <input type="number" name="tIdadePai" id="cIdadePai" min="0"/>
 				
 			</p>
-			<p>Nome da mãe: <input required="required" type="type" placeholder="Digite o nome da sua mãe" size="20" name="tNomeMae" id="cNomeMae"/>
-				Idade: <input type="number" name="tIdadeMae" id="cIdadeMae" min="0"/>
+			<p> <label for="cNomeMae">Nome da mãe: <input required="required" type="type" placeholder="Digite o nome da sua mãe" size="20" name="tNomeMae" id="cNomeMae"/>
+				<label for="cIdadeMae"> Idade: <input type="number" name="tIdadeMae" id="cIdadeMae" min="0"/>
 
 			</p>			
 		</fieldset>
@@ -82,9 +82,9 @@
                 <input type="radio" name="tComportamento" id="cRuim"/><label for="cRuim">Ruim</label>
 			</fieldset>
 			</p>
-			<p>Quantidade de travessuras: <input type="number" name="tTravessuras" id="cTravessuras" min="0"/>
+			<p><label for="cTravessuras"> Quantidade de travessuras: <input type="number" name="tTravessuras" id="cTravessuras" min="0"/>
 			</p>
-			<p>Cor preferida: <input type="color" name="tColor" id="tColor" value="#0000ff"/></p>
+			<p><label for="tColor">Cor preferida: <input type="color" name="cColor" id="tColor" value="#0000ff"/></p>
 			</p>
 		</fieldset>
 		<button type="submit">Fazer Pedido</button>
