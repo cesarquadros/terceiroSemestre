@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="exercicio4Forms.css"/>
 </head>
 <body>
+	<h1 id="titulo">O Papai Noel ficou maluco, peça seu presente</h1>
 	<form id="fContato">
 		<fieldset id="dadosCliente">
 			<legend>Dados Cliente</legend>
@@ -25,7 +26,7 @@
                 <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
 			</fieldset>
 		</fieldset>
-		<fieldset>
+		<fieldset id="endCliente">
 			<legend>Endereço</legend>
 			<p><label for="cEndereco"> Logradouro: 
 				<input required="required" type="text" placeholder="RUA/AVENIDA" size="40" name="tEndereco" id="cEndereco"/> 
@@ -36,7 +37,7 @@
 				<input required="required" type="text" placeholder="EX:00000-000" size="11" name="tCep" id="tCep"/>
 			</p>		
 		</fieldset>
-		<fieldset>
+		<fieldset id="presenteCliente">
 			<legend>Presents</legend>
 			<p>Presente 1:
 				<select>
@@ -60,7 +61,7 @@
 				</select>
 			</p>
 		</fieldset>
-		<fieldset>
+		<fieldset id="familiaCliente">
 			<legend>Familia</legend>
 			<p><label for="cQtdIrmaos">Quantidade de irmãos:
 				<input type="number" name="tQtdIrmaos" id="cQtdIrmaos" min="0"/>
@@ -74,7 +75,7 @@
 
 			</p>			
 		</fieldset>
-		<fieldset>
+		<fieldset id="infAddCliente">
 			<legend>Informações adicionais da criança</legend>
 			<fieldset>
 				<legend>Comportamento</legend>
@@ -87,7 +88,8 @@
 			<p><label for="tColor">Cor preferida: <input type="color" name="cColor" id="tColor" value="#0000ff"/></p>
 			</p>
 		</fieldset>
-		<button type="submit">Fazer Pedido</button>
+		<button type="submit" id="enviar">Fazer Pedido</button>
+		<button type="reset" id="limpar">Limpar</button>
 	</form>
 </body>
 </html>

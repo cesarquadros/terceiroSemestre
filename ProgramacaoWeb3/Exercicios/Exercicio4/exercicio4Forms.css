@@ -7,10 +7,16 @@ body{
 form {
 	width: 700px;
 	margin: 0px;
+	box-shadow: 10px 10px 50px;
+		padding-left: 10px;
+	padding-right: 10px;
 }
 
 form fieldset{
-	border: 3px solid #000000;
+	border: 2px solid #000000;
+	box-shadow: 1px 1px 1px;
+	margin-top: 20px;
+
 }
 
 form fieldset legend {
@@ -21,5 +27,23 @@ form fieldset legend {
 
 form fieldset p{
 	font-family: monospace;
+}
+form fieldset input:focus{
+	background: hsla(50, 100%, 50%, .5);
+}
 
+form>button{
+	width: 200px;
+	height: 50px;
+	margin-left: 100px;
+	margin-top: 10px;
+	box-shadow: 5px 5px 10px;
+	transition:1s;
+}
+
+form>button#enviar:hover{
+	background: hsla(120, 100%, 50%, .5);
+}
+form>button#limpar:hover{
+	background: hsla(360, 100%, 50%, .5);
 }
