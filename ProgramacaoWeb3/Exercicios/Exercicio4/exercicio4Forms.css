@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 body{
-	background: url("http://www.osmais.com/wallpapers/201212/natal-presente-wallpaper_c2673.jpg");
+	background: url("http://www.osmais.com/wallpapers/201212/natal-	presente-wallpaper_c2673.jpg");
 }
 
 form {
 	width: 700px;
-	margin: 0px;
+	margin: auto;
 	box-shadow: 10px 10px 50px;
-		padding-left: 10px;
+	padding-left: 10px;
 	padding-right: 10px;
 }
 
@@ -16,7 +16,6 @@ form fieldset{
 	border: 2px solid #000000;
 	box-shadow: 1px 1px 1px;
 	margin-top: 20px;
-
 }
 
 form fieldset legend {

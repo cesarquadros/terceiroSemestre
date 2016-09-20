@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class ProgramaPrincipalEmpregado {
+
+	public static void imprimeHolerite(Empregado empregado) {
+		System.out.printf("%s%20s\n", empregado.getNome(), empregado.calcularSalarioMensal());
+	}
+
+	public static void main(String[] args) {
+
+		Assalariado assalariado1 = new Assalariado("Jose", 1000.00);
+		Comissionado comissionado1 = new Comissionado("Du", 0.23);
+		FixoComissionado fixoComissionado1 = new FixoComissionado("Bill", 0.23, 1000);
+		Horista horista1 = new Horista("Cesar", 10.00);
+		
+		System.out.println(assalariado1.getSalarioMensal());
+		
+	}
+}

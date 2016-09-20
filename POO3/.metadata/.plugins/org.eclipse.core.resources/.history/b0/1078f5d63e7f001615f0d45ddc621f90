@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class ProgramaPrincipalEmpregado {
+
+	public static void imprimeHolerite(Empregado empregado) {
+		System.out.printf("%s%20s\n", empregado.getNome(), empregado.calcularSalarioMensal());
+	}
+
+	public static void main(String[] args) {
+
+		Assalariado assalariado1 = new Assalariado("Jose", 1000.00);
+		Comissionado comissionado1 = new Comissionado("Du", 0.23);
+		FixoComissionado fixoComissionado1 = new FixoComissionado("Bill", 0.23, 1000);
+		Horista horista1 = new Horista("Cesar", 10.00);
+
+		System.out.printf("Nome:%20s\n", "Salario: R$");
+
+		ArrayList<Empregado> array = new ArrayList<>();
+		array.add(assalariado1);
+		array.add(comissionado1);
+		array.add(fixoComissionado1);
+		array.add(horista1);
+
+		for (Empregado empregado : array) {
+			imprimeHolerite(empregado);
+		}
+
+	}
+}
