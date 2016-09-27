@@ -9,24 +9,39 @@ var pessoa = {
 	"sobrenome":sobrenome,
 	"idade":idade
 };
-//criando lista vazia
-var lista = [];
 
-//for para preencher o vetor
-for(var i =0; i<5; i++){
-	lista.push(i+3);
+//criando um construtor
+
+var listaPessoa = [];
+function Pessoa(n,s,i){
+	this.nome = n;
+	this.sobrenome = s;
+	this.idade = i;
+	this.getNomeCompleto = function (){return this.nome + " " + this.sobrenome};
 }
 
-function soma (a){return a + 1;}
+//instanciando uma pessoa
+var p1 = new Pessoa("Cesar", "Quadros", "28");
+var p2 = new Pessoa("pessoa2", "teste2", "29");
+var p3 = new Pessoa("pessoa3", "teste3", "30");
 
-function somatoria(v,a){return v + a / i}
+listaPessoa.push(p1);
+listaPessoa.push(p2);
+listaPessoa.push(p3);
 
-var lista2 = lista.map(soma);
-var lista3 = lista.reduce(somatoria,0);
+//imprime no console do navegador
+/*console.log(p1);
+console.log(pessoa);
+*/
 
 
-//colocando o objeto pessoa na lista após os numeros. Uma lista pode possuir varios tipos
-/*lista.push(pessoa);
-lista.push(lista);
-console.log(lista);
+
+
+
+/*
+var lista = [];
+//for para preencher o vetor
+for(var i =0; i<5; i++){
+	lista.push(i+1);
+}
 */
