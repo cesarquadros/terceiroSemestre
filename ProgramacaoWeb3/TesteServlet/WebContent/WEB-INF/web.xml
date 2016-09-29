@@ -14,4 +14,16 @@
     <servlet-name>Pedido</servlet-name>
     <url-pattern>/Pedido</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>CadastroCli</display-name>
+    <servlet-name>CadastroCli</servlet-name>
+    <servlet-class>Aula7.CadastroCli</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CadastroCli</servlet-name>
+    <url-pattern>/CadastroCli</url-pattern>
+  </servlet-mapping>
 </web-app>

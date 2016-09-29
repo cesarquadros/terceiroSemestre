@@ -37,6 +37,7 @@
 		</select>	
 		</p>
 		<input type="submit" value="Solicitar Presente">
+		<button><a href="cadastroCliente.jsp">Cadastro</a></button>
 	</form>
 </body>
 </html>
