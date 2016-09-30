@@ -8,32 +8,41 @@
 	<title>Cadastro de Clientes</title>
 </head>
 <body>
-	<header id="cabecalho">
+	<header>EA SPORTS
 		<nav id="menu">
 			<ul>
-			<li id="home">Home</li>
-			<li id="relatorio">Relatorio</li>	
+			<li id="home"><a a href="index.jsp">Home</a></li>
+			<li id="consultar"><a>Consultar</a></li>
+			<li id="relatorio"><a>Relatorio</a></li>
 			</ul>		
-		</nav>
+		</nav>	
 	</header>
-	<form id="fCadastroCli" action="CadastroCli" method="get">
-		<fieldset>
-			<legend>Cadastro cliente</legend>
-			<p><label for="cNome">Nome:
-				<input required="required" placeholder="Apenas letras" type="text" name="tNome" id="cUserNome" pattern="[A-Za-z]*"/>
-			</p>
-			<p><label for="cUserSobrenome">Sobrenome: 
-				<input required="required" placeholder="Apenas letras" type="text" name="tUserSobrenome" id="cUserSobrenome" pattern="[A-Za-z]*"/>
-			</p>
-			<p><label for="cNasc"> Data Nasc.: 
-				<input type="date" name="tNasc" id="cNasc"/>
-			</p>
-			<p><label for="cCpf">CPF:
-				 <input required="required" type="text" placeholder="EX:37765289829" size="14" name="cCpf" id="tCpf"/>
-			</p>
-		</fieldset>
-		<button type="submit" id="enviar">Efetuar cadastro</button>
-	</form>
-
+	<section>
+		<div id="divForm">		
+			<form id="fCadastroCli" action="CadastroCli" method="get">
+			<fieldset>
+				<legend>Cadastro cliente</legend>
+				<p><label for="cNome">Nome:
+					<input required="required" placeholder="Apenas letras" type="text" name="tNome" id="cUserNome" pattern="[A-Za-z]*"/>
+				</p>
+				<p><label for="cUserSobrenome">Sobrenome: 
+					<input required="required" placeholder="Apenas letras" type="text" name="tUserSobrenome" id="cUserSobrenome" pattern="[A-Za-z]*"/>
+				</p>
+				<p><label for="cNasc"> Data Nasc.: 
+					<input type="date" name="tNasc" id="cNasc"/>
+				</p>
+				<p><label for="cCpf">CPF:
+					 <input required="required" type="text" placeholder="EX:37765289829" size="14" name="cCpf" id="tCpf"/>
+				</p>
+			</fieldset>
+			<button type="submit" id="enviar">Efetuar cadastro</button>
+			</form>
+		</div>
+	</section>
+	<footer id="rodape">
+		<p>Copyright &copy; 2016 - by While(true)</p>
+		<p><a href="http://facebook.com.br" target="_blank">Facebook </a>| 
+		<a href="http://twiter.com.br" target="_blank">Twitter </a></p>
+	</footer>	
 </body>
 </html>

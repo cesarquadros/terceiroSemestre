@@ -3,41 +3,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Pedido de presente</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+<title>EA Sports</title>
 </head>
 <body>
-	<form action="Pedido" method="get">
-		<p>Nome:<input type="text" name="nome"></p>
-		<p>Presente 1:
-		<select name="presente1">
-			<option value="PS4">PS4</option>
-			<option value="iPhone">iPhone</option>
-			<option value="Caminhao">Caminhão</option>
-			<option value="Bola">Bola</option>
-			<option value="Boneca">Boneca</option>
-		</select>
-		</p>
-		<p>Presente 2:
-		<select name="presente2">
-			<option value="PS4">PS4</option>
-			<option value="iPhone">iPhone</option>
-			<option value="Caminhao">Caminhão</option>
-			<option value="Bola">Bola</option>
-			<option value="Boneca">Boneca</option>
-		</select>
-		</p>
-		<p>Presente 3:
-		<select name="presente3">
-			<option value="PS4">PS4</option>
-			<option value="iPhone">iPhone</option>
-			<option value="Caminhao">Caminhão</option>
-			<option value="Bola">Bola</option>
-			<option value="Boneca">Boneca</option>		
-		</select>	
-		</p>
-		<input type="submit" value="Solicitar Presente">
-		<button><a href="cadastroCliente.jsp">Cadastro</a></button>
-	</form>
+	<header>EA SPORTS
+		<nav id="menu">
+			<ul>
+			<li id="home"><a a href="cadastroCliente.jsp">Cadastrar</a></li>
+			<li id="consultar"><a>Consultar</a></li>
+			<li id="relatorio"><a>Relatorio</a></li>	
+			</ul>		
+		</nav>	
+	</header>
+	<section>
+		<div id="logo">
+			<img src="https://lh4.googleusercontent.com/-3ZNymRYjh_s/AAAAAAAAAAI/AAAAAAAACl0/DleY3hpt4n0/s0-c-k-no-ns/photo.jpg"/>
+		</div>		
+	</section>	
+	<footer id="rodape">
+		<p>Copyright &copy; 2016 - by While(true)</p>
+		<p><a href="http://facebook.com.br" target="_blank">Facebook </a>| 
+		<a href="http://twiter.com.br" target="_blank">Twitter </a></p>
+	</footer>
 </body>
 </html>

@@ -30,9 +30,9 @@ public class Pedido extends HttpServlet {
 		String presente2 = request.getParameter("presente2");
 		String presente3 = request.getParameter("presente3");
 		
-		Presente pedidoPresente = new Presente(nome, presente1, presente2, presente3);
+
 		DAO dao = new DAO();
-		dao.adicionar(pedidoPresente);
+
 		
 		
 		PrintWriter saida = response.getWriter();
@@ -50,7 +50,7 @@ public class Pedido extends HttpServlet {
 //				+"</HTML>"
 //		);
 		
-		ArrayList<Presente>listaPedidos = dao.listarPedidos();
+
 		
 		String teste = "table table-bordered table-striped";
 		saida.println("<html>"
@@ -63,12 +63,12 @@ public class Pedido extends HttpServlet {
 				+						 "<th>Presente 3</th>"
 								+ "<tbody>");		
 		
-		for(int i=0; i<listaPedidos.size();i++){
+		for(int i=0; i<9;i++){
 			saida.println("<tr>"
-					+ "<td>"+listaPedidos.get(i).getNome()+"</td>"
-					+ "<td>"+listaPedidos.get(i).getPresente1()+"</td>"
-					+ "<td>"+listaPedidos.get(i).getPresente2()+"</td>"
-					+ "<td>"+listaPedidos.get(i).getPresente3()+"</td>"
+					+ "<td>"+i+"</td>"
+					+ "<td>"+i+"</td>"
+					+ "<td>"+i+"</td>"
+					+ "<td>"+i+"</td>"
 						+ "</tr>");
 		}		
 		

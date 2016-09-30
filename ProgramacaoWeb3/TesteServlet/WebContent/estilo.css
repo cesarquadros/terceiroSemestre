@@ -1,72 +1,79 @@
 ﻿@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Titillium+Web';
 @font-face{
-	font-family: 'FonteLogo';
-	src: url("../_fonts/bubblegum-sans-regular.otf");
+	font-family: sans-serif;
 }
-
 body{
  	background-color: #dddddd;
  	font-family: Arial, sans-serif;
 	color: rgba(0,0,0,1);
- }
-
-/*Formatação do menu*/
+} 
+header{
+ 	background: #373737;
+ 	text-align: center;
+ 	height: 35px; 
+ 	color: white;
+ 	font-size: 25pt;
+} 
+header nav {
+ 	 font-size: 15pt;
+} 
+/*---------------------------------------------------------- Formatação do menu*/
 nav#menu {
 	display: block;
-	background: #ffffff;
+	border-bottom: 1px solid black;
 }
-
 nav#menu ul {
 	list-style: none;
 	text-transform: uppercase;
 	position: absolute;
-	top: -20px;
-	left: 0px;
+	top: 30px;
+	left: -34px;
 }
 nav#menu li {
-	position: absolute;
-	background-color: #808080;
+	display: inline-block;
+	background-color: #595959;
 	padding: 5px;
-	margin: 0x;	
-	transition: background-color 1s;
-	top: -10px;
-	transition: 1s cubic-bezier(.98,.02,.07,1.59);
+	margin: 2px;
+	transition: background-color 0.4s;
 }
-nav#menu li#relatorio {
-	left: 120px;
-}	
-
+nav#menu h1{
+	display: none;
+}
 nav#menu li:hover{
-	background-color: #ffff80;
-	top: 0px;
-	
+	background-color: #8080ff;
 }
 nav#menu a {
-	color: #000000;
+	color: #ffffff;
 	text-decoration: none;
 }
 nav#menu a:hover{
 	color: #ffffff;
 	text-decoration: underline;
 }
-
-form{
-	position: static;
+/*-------------------------------------------------------- Formatação do LOGO*/
+section div {
+	heigth: 500px;
+	width: 500px;
+	margin: 80px auto;
 }
-form fieldset{
-	position: relative;
-	top: 50px;
-	width: 35%;
-}
+/*---------------------------------------------------------- Formatação do botao*/
 form button{
 	position: relative;
-	top: 60px;
+	top: 20px;
 }
 form button:hover{
 	background: red;
 }
+/*--------------------------------------------------------- Formatação do rodapé*/
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
 
+footer#rodape p {
+	text-align: center;
+}
 
 
 
