@@ -1,0 +1,87 @@
+﻿@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+ 	background-color: #dddddd;
+ 	font-family: Arial, sans-serif;
+	color: rgba(0,0,0,1);
+ }
+
+/*Formatação do menu*/
+nav#menu {
+	display: block;
+	background: #ffffff;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+nav#menu li {
+	position: absolute;
+	background-color: #808080;
+	padding: 5px;
+	margin: 0x;	
+	transition: background-color 1s;
+	top: -10px;
+	transition: 1s cubic-bezier(.98,.02,.07,1.59);
+}
+nav#menu li#relatorio {
+	left: 120px;
+}	
+
+nav#menu li:hover{
+	background-color: #ffff80;
+	top: 0px;
+	
+}
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+form{
+	position: static;
+}
+form fieldset{
+	position: relative;
+	top: 50px;
+	width: 35%;
+}
+form button{
+	position: relative;
+	top: 60px;
+}
+form button:hover{
+	background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

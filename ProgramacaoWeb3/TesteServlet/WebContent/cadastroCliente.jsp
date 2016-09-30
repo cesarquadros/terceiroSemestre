@@ -4,13 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
 	<title>Cadastro de Clientes</title>
-	<h1>Cadastro de clientes</h1>
 </head>
 <body>
+	<header id="cabecalho">
+		<nav id="menu">
+			<ul>
+			<li id="home">Home</li>
+			<li id="relatorio">Relatorio</li>	
+			</ul>		
+		</nav>
+	</header>
 	<form id="fCadastroCli" action="CadastroCli" method="get">
 		<fieldset>
-			<legend>Dados do cliente</legend>
+			<legend>Cadastro cliente</legend>
 			<p><label for="cNome">Nome:
 				<input required="required" placeholder="Apenas letras" type="text" name="tNome" id="cUserNome" pattern="[A-Za-z]*"/>
 			</p>
@@ -26,5 +34,6 @@
 		</fieldset>
 		<button type="submit" id="enviar">Efetuar cadastro</button>
 	</form>
+
 </body>
 </html>
