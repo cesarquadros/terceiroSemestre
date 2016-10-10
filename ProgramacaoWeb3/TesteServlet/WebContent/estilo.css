@@ -69,12 +69,18 @@ form button:hover{
 footer#rodape{
 	clear: both;
 	border-top: 1px solid #606060;
+	background: #373737;
+	color: white;
 }
 
 footer#rodape p {
 	text-align: center;
+	color: white;
 }
 
+footer#rodape p a{
+	color: white;
+}
 
 
 

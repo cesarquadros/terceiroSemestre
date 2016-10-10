@@ -1,0 +1,32 @@
+﻿@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+@font-face{
+	font-family: sans-serif;
+}
+
+body{
+ 	background-color: #dddddd;
+}
+
+section div{
+	margin: 0px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+public class Fibonacci {
+
+	public static void main(String[] args){
+		
+		System.out.println(calculoFibonnaci(6));
+	}
+	
+	
+	
+	static int calculoFibonnaci(int fibo){
+		
+		if(fibo<=1){
+			return 1;
+		}
+		
+		return calculoFibonnaci(fibo-2) + calculoFibonnaci(fibo-1);
+	}
+}

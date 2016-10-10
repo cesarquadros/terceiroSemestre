@@ -19,7 +19,7 @@
 	</header>
 	<section>
 		<div id="logo">
-			<img src="https://lh4.googleusercontent.com/-3ZNymRYjh_s/AAAAAAAAAAI/AAAAAAAACl0/DleY3hpt4n0/s0-c-k-no-ns/photo.jpg"/>
+			<img src="log.jpg"/>
 		</div>		
 	</section>	
 	<footer id="rodape">

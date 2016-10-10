@@ -1,0 +1,13 @@
+div.caixa{
+	background: black;
+	color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align:center;
+	position:fixed;
+}
+
+div.caixa.marcado{
+	font-size: 8px;
+}

@@ -1,0 +1,6 @@
+127.0.0.1 - - [03/Oct/2016:10:51:24 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [03/Oct/2016:10:51:27 -0300] "GET /ado/index.jsp HTTP/1.1" 200 1245
+0:0:0:0:0:0:0:1 - - [03/Oct/2016:10:51:34 -0300] "GET /ado/Pedido?nome=CEsar&presente1=Caminhao&presente2=iPhone&presente3=PS4 HTTP/1.1" 200 384
+0:0:0:0:0:0:0:1 - - [03/Oct/2016:10:51:44 -0300] "GET /ado/index.jsp HTTP/1.1" 200 1245
+0:0:0:0:0:0:0:1 - - [03/Oct/2016:10:51:51 -0300] "GET /ado/Pedido?nome=treste&presente1=iPhone&presente2=Boneca&presente3=iPhone HTTP/1.1" 200 513
+0:0:0:0:0:0:0:1 - - [03/Oct/2016:10:52:00 -0300] "GET /ado/Pedido?nome=fds&presente1=iPhone&presente2=Boneca&presente3=iPhone HTTP/1.1" 200 542
